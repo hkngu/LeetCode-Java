@@ -1,4 +1,4 @@
-package leetcode;
+package top100;
 
 public class Demo19 {
     static ListNode removeNthFromEnd(ListNode head,int n){

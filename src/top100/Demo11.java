@@ -1,4 +1,4 @@
-package leetcode;
+package top100;
 
 public class Demo11 {
     public int maxArea(int[] height){
