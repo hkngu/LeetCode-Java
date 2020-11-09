@@ -2,6 +2,9 @@ package top100;
 
 import java.util.ArrayList;
 
+/**
+ * 重点关注
+ */
 public class Demo03 {
     static int lengthOfLongestSubstring(String s){
         int left = 0;//k
@@ -73,6 +76,6 @@ public class Demo03 {
 
     public static void main(String[] args) {
         int i = lengthOfLongestSubstring("tnmcammcv");
-        //System.out.println(i);
+        System.out.println(i);
     }
 }
