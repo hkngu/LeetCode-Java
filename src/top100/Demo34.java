@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Demo34 {
     static int[] searchRange(int[] nums,int target){
+        //经典二分法 要注意边界值
         int[] result = {-1,-1};
         if (nums == null || nums.length<1)
             return result;
