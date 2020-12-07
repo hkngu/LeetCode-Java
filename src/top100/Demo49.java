@@ -12,7 +12,7 @@ public class Demo49 {
         for (String str:strs){
             char[] array = str.toCharArray();
             Arrays.sort(array);
-            String key = Arrays.toString(array);//这里一定要转为字符串，数组
+            String key = Arrays.toString(array);//这里一定要转为字符串
             if(map.containsKey(key)){
                 map.get(key).add(str);
             }else {
