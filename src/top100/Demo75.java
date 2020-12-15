@@ -1,12 +1,14 @@
-package algorithm;
+package top100;
 
-import java.util.Arrays;
-
-public class QuickSort {
+public class Demo75 {
+    public void sortColors(int[] nums) {
+        //这个题目还需要考虑 这里先手写一下快排
+        quickSort(nums,0,nums.length-1);
+    }
     private static void quickSort(int[] arr,int start,int end){
         if (arr == null || arr.length<=1)
             return;
-        if (end-start < 1)
+        if (end-start <= 1)
             return;
         int left = start;
         int right = end;
@@ -27,11 +29,5 @@ public class QuickSort {
         arr[left] = temp;
         quickSort(arr,start,left-1);
         quickSort(arr,left+1,end);
-    }
-
-    public static void main(String[] args) {
-        int[]  arr = {1, 1, 2, 1, 3, 5, 3, 7, 9};
-        quickSort(arr,0,arr.length-1);
-        System.out.println(Arrays.toString(arr));
     }
 }
